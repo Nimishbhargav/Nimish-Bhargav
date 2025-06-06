@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nimish Bhargav | Student Software Engineer </title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <div id="particles-js"></div>
+</head>
+
+<body>
+    <canvas id="animated-bg"></canvas>
+
+
+
+    <div id="background"></div>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Nimish Logo" class="logo" />
+            <h1 id="animated-logo-text"><span id="logo-typer"></span></h1>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p id="about-typewriter" class="animated-about"></p>
+        </section>
+    </main>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>🎉 Birthday Surprise Site</h3>
+                <p>A special animated birthday site with custom messages and surprises.</p>
+                <a href="https://birthday-lime-theta.vercel.app/" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>💖 Something Special</h3>
+                <p>A personalized website surprise filled with animations and heartwarming content.</p>
+                <a href="https://something-special-bay.vercel.app/" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>🧠 Nimish Portfolio</h3>
+                <p>A glowing AI-themed animated portfolio showcasing my software journey.</p>
+                <a href="https://nimish-bhargav.vercel.app/" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>🌌 Google Homepage Redesign</h3>
+                <p>A cosmic-themed custom Google homepage built with HTML, CSS, and JS.</p>
+                <a href="https://google-homepage-lovat-chi.vercel.app/" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="Skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>JavaScript / React.js</li>
+            <li>Python / Django</li>
+            <li>Node.js / Express</li>
+            <li>MongoDB / MySQL</li>
+            <li>HTML / CSS / Tailwind</li>
+            <li>Git / GitHub</li>
+            <li>Vercel / Firebase</li>
+        </ul>
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p>"Nimish showed incredible creativity while building his first Python projects in school."</p>
+                <span>- Computer Teacher</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"Always eager to help others debug code and explore new tools. A true team player."</p>
+                <span>- Coding Club Classmate</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"He is a very good coder and creative while working on his projects"</p>
+                <span>- School Friend</span>
+            </div>
+    </section>
+
+    <section id="school-coding">
+        <h2>School Life Coding Achievements & Experience</h2>
+        <ul class="skills-list">
+            <li>Started coding in high school with Python</li>
+            <li>Built a personal portfolio</li>
+            <li>Published early web projects on GitHub and Vercel</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" autocomplete="off">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name" />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Your email" />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Your message"></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+        <p id="thank-you-message" class="hidden">Thank you for your message! I'll get back to you soon.</p>
+    </section>
+    </main>
+    <script src="animated-bg.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <div id="particles-js"></div>
+
+
+    <footer>
+        <p>&copy; 2025 Nimish Bhargav. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
