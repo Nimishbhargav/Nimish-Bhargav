@@ -1,0 +1,159 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+  overflow-x: hidden;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+header {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+.typewriter {
+  font-size: 2.5rem;
+  font-weight: bold;
+  border-right: 2px solid #0ff;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(30) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.animated-text {
+  font-size: 1.2rem;
+  color: #0ff;
+  margin-top: 10px;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #00ffe7;
+}
+
+#skills ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+}
+
+#skills li {
+  background: #111;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #0ff;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: rgba(0, 255, 255, 0.1);
+  border: 1px solid #00ffe7;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #0ff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+button {
+  background: #0ff;
+  color: #000;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #00c2b2;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Animated Background */
+.bg-animation {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at center, #001f1f 0%, #000 80%);
+  animation: pulse 10s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(1.2); }
+}
+
+.glow {
+  text-shadow: 0 0 8px #0ff, 0 0 15px #0ff;
+}
+
+.glow-card {
+  animation: glowCard 3s ease-in-out infinite alternate;
+}
+
+@keyframes glowCard {
+  from {
+    box-shadow: 0 0 10px #0ff;
+  }
+  to {
+    box-shadow: 0 0 25px #00ffe7, 0 0 40px #00ffe7;
+  }
+}
