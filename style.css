@@ -564,9 +564,78 @@ footer::after {
     transition-duration: 0.2s !important;
   }
 }
+@media screen and (max-width: 600px) {
 
-
-
-
-
-
+  header {
+    padding: 60px 10px 40px;
+  }
+  .intro-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .logo-spin {
+    width: 48px;
+    height: 48px;
+  }
+  #typewriterIntro, .typewriter-loop {
+    font-size: 1.2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  h3 {
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+  }
+  section {
+    padding: 30px 8px;
+  }
+  .card-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .card {
+    width: 95%;
+    min-width: unset;
+    padding: 14px;
+  }
+  #skills ul {
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 1rem;
+  }
+  #skills li {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+    animation-duration: 1.2s !important;
+    animation-iteration-count: infinite !important;
+  }
+  form {
+    padding: 12px;
+    gap: 10px;
+  }
+  input, textarea {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  button[type="submit"] {
+    padding: 10px 14px;
+    font-size: 1rem;
+  }
+  footer {
+    padding: 16px 8px;
+    font-size: 0.85rem;
+  }
+  .background-layers, #bg {
+    filter: blur(2px);
+  }
+  /* Reduce animation for performance */
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.7s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.2s !important;
+  }
+}
